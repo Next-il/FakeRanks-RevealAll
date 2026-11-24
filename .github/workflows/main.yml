@@ -1,6 +1,8 @@
 name: CI
 
 on:
+  # Next-il fork: a manual run builds against the current s2sdk cs2 branch (rebuild after a CS2 update)
+  workflow_dispatch:
   push:
     tags:
       - '*'
